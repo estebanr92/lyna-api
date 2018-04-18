@@ -1,0 +1,39 @@
+{
+  "name": "case",
+  "plural": "cases",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "object",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "contact": {
+      "type": "object"
+    },
+    "images": {
+      "type": [
+        "string"
+      ]
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
